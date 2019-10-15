@@ -1,0 +1,14 @@
+*
+
+!.config/
+!.config/**
+
+!.oh-my-zsh
+!.bash_profile
+!.bashrc
+!.gitignore
+!.profile
+!.vimrc
+!.Xmodmap
+!.Xresources
+!.zshrc

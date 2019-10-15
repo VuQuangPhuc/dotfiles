@@ -1,0 +1,123 @@
+[bar/top]
+override-redirect = false
+top = true
+
+fixed-center = true
+
+width = 100%
+height = 30
+
+background = #550a0f20
+foreground = #999
+
+radius = 5.0
+
+line-size = 0
+line-color = #f00
+
+padding-right = 4
+module-margin = 1
+
+font-0 = "Cascadia Code:size=12"
+font-1 = "MaterialIcons:size=10"
+font-2 = "FontAwesome5Free:style=Solid:size=10"
+
+modules-left = i3
+modules-center =
+modules-right = cpu sep memory sep battery sep date
+
+separator =
+dim-value = 1.0
+
+wm-name = i3
+
+tray-position = right
+;tray-detached = false
+;tray-maxsize = 16
+
+;tray-background = ${root.background}
+
+;tray-offset-x = 0
+;tray-offset-y = 0
+
+;tray-padding = 0
+;tray-scale = 1.0
+
+dpi-x = 96
+dpi-y = 96
+
+enable-ipc = false
+
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+
+label-unfocused = %index%
+label-unfocused-padding = 2
+label-unfocused-foreground = #ffffff
+
+label-focused = %index%
+label-focused-foreground = #fff
+label-focused-background = #4e5165
+label-focused-underline = #fba922
+label-focused-padding = 2
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %d-%m-%Y%
+time = %H:%M
+
+
+label = %date% %time% 
+label-font = 0
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+
+label =  %percentage%%
+
+label-padding-right = 1
+
+[module/memory]
+type = internal/memory
+
+interval = 0.5
+format = <label>
+
+label =  %gb_used%
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-framerate = 750
+
+[module/decor-glyph]
+type = custom/text
+content-foreground = #4e5165
+margin = 0
+
+[module/sep]
+inherit = module/decor-glyph
+content = "/"
