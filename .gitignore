@@ -1,5 +1,9 @@
 *
 
+!Pictures/
+!Pictures/wallpapers
+!Pictures/wallpapers/**
+
 !.config/
 !.config/**
 
