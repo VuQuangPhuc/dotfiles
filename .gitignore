@@ -3,8 +3,10 @@
 !README.md
 
 !Pictures/
-!Pictures/wallpapers
+!Pictures/wallpapers/
 !Pictures/wallpapers/**
+!Pictures/README/
+!Pictures/README/**
 
 !.config/
 !.config/**
