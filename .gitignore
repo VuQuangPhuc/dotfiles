@@ -12,6 +12,7 @@
 !.config/**
 
 !.oh-my-zsh
+!.bash_aliases
 !.bash_profile
 !.bashrc
 !.gitignore
