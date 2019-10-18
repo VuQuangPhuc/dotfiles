@@ -150,6 +150,9 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 
+# launch applications
+bindsym $mod+F3 exec --no-startup-id pcmanfm
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -197,6 +200,3 @@ mode "$mode_system" {
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
-
-# applications
-bindsym $mod+F3 exec --no-startup-id pcmanfm
